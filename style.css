@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #22223B;
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #22223B;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .sidebar li a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: #DBD56E;
+  }
+  
+  .sidebar li a:hover {
+    text-decoration: none;
+    color: #F2E9E4;
+  }
