@@ -7,29 +7,141 @@
         <title>Nona Nersisyan</title>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <script src="script.js"></script>
     </head>
 
     <body>
         <header>
-            <h1>Nona Nersisyan Personal Website</h1>
+            <div class="main-pic">
+                <img src="images/main.png">
+            </div>
         </header>
 
         <!--NAVIGATION------------------------------->
-
         <div class="sidebar">
             <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">experience</a></li>
-              <li><a href="#">projects</a></li>
-              <li></li>
+              <li><a href="#home-section">~home</a></li>
+              <li><a href="#experience-section">~experience</a></li>
+              <li><a href="#projects-sections">~projects</a></li>
+              <li><a href="images/Nona_Nersisyan_Resume.pdf">~resume</a></li>
+              <li>
+                <div class="bottom-sidebar">
+                    <ul>
+                        <li><a href="https://github.com/nnersisy">
+                            <img src="images/github.png" alt="Image" 
+                            style="width: 20px; height: 20px;">
+                          </a></li>
+                        <li><a href="https://www.linkedin.com/in/nona-nersisyan/">
+                            <img src="images/linkedin.png" alt="Image" 
+                            style="width: 20px; height: 20px;">
+                          </a></li>
+                        <li><a href="mailto:nonanersisyan03@gmail.com">
+                            <img src="images/email.png" alt="Image" 
+                            style="width: 20px; height: 20px;">
+                          </a></li>
+                    </ul>
+                </div>
+              </li>
             </ul>
         </div>
 
+        <section class="home-section">
+            <h3 class="intro">hi, it's <span class="name">nona</span>.</h1>
+            <p class="intro-p">
+                I am a junior studying Computer Science at the University of Southern California.
+                I take interest in all things software engineering, which include full stack web development,
+                machine learning, cyber security, and more.
+            </p>
+            <p class ="intro-p">
+                Outside of coding, I enjoy trying new food, baking, or going on long walks. 
+            </p>
+        </section>
+
+        <section class="experience-section">
+            <h1>~experience________________</h1>
+            <div class="experience-flex">
+                <div class="experience-names">
+                    <ul>
+                        <li><a href="#" onclick="showExperience1()">USC Information Sciences Institute</a></li>
+                        <li><a href="#" onclick="showExperience2()">CI Compass</a></li>
+                        <li><a href="#" onclick="showExperience3()">Kode with Klossy</a></li>
+                    </ul>
+                </div>
+                <div class="experience-details">
+                    <ul id ="experience1" style="display: none;">
+                        <h3>Cloud/Edge Computing Intern</h3>
+                        <p class="date">June 2022-July 2022</p>
+                        <li><p>Created and executed a streamlined experimental process utilizing 
+                            edge and cloud computing to classify lake zooplankton and infer knowledge 
+                            of surrounding ecosystem health.</p></li>
+                        <li><p>
+                            Utilized Chameleon Cloud Site, Pegasus Workflow Management System, and HTCondor
+                             to improve performance of data processing and workflow execution.</p></li>
+                        <li><p>
+                            Built a workflow to identify 26 types of zooplankton, which could take more 
+                            time and effort if done manually and potential for future applications in data 
+                            analysis and classification for other ecological studies.</p></li>
+                    </ul>
+                    <ul id ="experience2" style="display: none;">
+                        <h3>Cyberinfrastructure Analyst Intern</h3>
+                        <p class="date">January 2022-May 2022</p>
+                        <li><p>Examined real-world cyberinfrastructure challenges in major facilities of NSF.</p></li>
+                        <li><p>Inspected cyberinfrastructure computing systems, data storage systems, advanced 
+                            instruments, data repositories, and visualization environments, all linked 
+                            together by software and high-performance networks to improve research productivity 
+                            and enable breakthroughs.</p></li>
+                    </ul>
+                    <ul id ="experience3" style="display: none;">
+                        <h3>Scholar</h3>
+                        <p class="date">Apr 2020-Aug 2021</p>
+                        <li><p>Collaborated to create a webpage using HTML, CSS, JS, (types, operators, 
+                            control flow functions, object-oriented programming, classes, and data abstraction)
+                             which focused on spreading news articles on current issues in the Middle East 
+                             and political knowledge in the U.S. Presented the website to a group of 50 scholars, 
+                             assistants, software engineers, and lecturers.</p></li>
+                        <li><p>Composed a webpage using skills in the fields of Data Science, Python, and Java.
+                             Webpage focused on showing young students how to determine credible sources, and 
+                             also providing them with more than 50 credible websites. Webpage included more
+                              than 5 pages, constructed from scratch using HTML, CSS, Python, and Java.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-sections">
+            <h1>~projects__________________</h1>
+            <div class="project-box">
+                <a href="https://github.com/nnersisy/budget-track" target="_blank">
+                    <img src="images/github.png" alt="Project Image 1" class="project-image"></a>
+                <div class="project-description">
+                  <h2>Budget Tracking</h2>
+                  <p>Tracks budget of user</p>
+                </div>
+              </div>
+
+              
+              <div class="project-box">
+                <a href="https://github.com/nnersisy/amazon_mock" target="_blank">
+                    <img src="images/github.png" alt="Project Image 2" class="project-image"></a>
+                <div class="project-description">
+                  <h2>Amazon Mock</h2>
+                  <p>mock of amazon, add view cart</p>
+                </div>
+              </div>
+              
+              <div class="project-box">
+                <a href="https://github.com/nnersisy/wordle" target="_blank">
+                    <img src="images/github.png" alt="Project Image 3" class="project-image"></a>
+                <div class="project-description">
+                  <h2>Wordle</h2>
+                  <p>popular wordle game.</p>
+                </div>
+              </div>
+        </section>
 
     </body>
-
-
-
-
 </html>
